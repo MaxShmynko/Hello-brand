@@ -1,0 +1,42 @@
+mixin contact()
+
+    +b('section').contact
+        +e.wrap
+            +e.header
+                +e.contact Contacts
+                +e.block
+                    +e.icon
+                        img(src='/images/contact_icon1.svg')
+                    +e.text
+                        +e.title_block Phone Number
+                        +e.info +32 9 282 57 25
+                +e.block
+                    +e.icon
+                        img(src='/images/contact_icon2.svg')
+                    +e.text
+                        +e.title_block Email
+                        +e.info info@email.com
+                +e.block
+                    +e.icon
+                        img(src='/images/contact_icon3.svg')
+                    +e.text
+                        +e.title_block Opening Hours
+                        +e.info Everyday from 6 AM - 9 PM
+                +e.block
+                    +e.icon
+                        img(src='/images/contact_icon4.svg')
+                    +e.text
+                        +e.title_block Map Street
+                        +e.info Jl. Raya Surabaya 2787
+            +e.questions
+                +e.header_questions have any questions?
+                +e.form
+                    +e.left
+                        +e.name Name
+                        +e('input')(type='text' name='name' placeholder='Input your name').input
+                    +e.right
+                        +e.mail Email
+                        +e('input')(type='text' name='mail' placeholder='Input your email').input
+                +e.request Speciale Request
+                +e('input')(type='text' name='mail' placeholder='Input your special request').input_request
+                +e('button').button Send

@@ -1,0 +1,104 @@
+.lead-catcher
+    position fixed
+    z-index 9
+    top 30%
+    left 35%
+    max-width w(1300)
+    margin 0 auto
+    display none
+    +below(1300px)
+        width 60%
+        left 20%
+
+
+    &__container
+        position relative
+        background-color $c-blue
+        border-radius w(10)
+        padding-bottom w(30)
+        z-index 8
+
+    &__text
+        background-color $c-white
+        border-radius w(8)
+        padding w(44) w(30) w(37)
+        text-align center
+        +below(768px)
+            height wm(100)
+            padding-top wm(20)
+            font-size wm(15)
+    
+    &__telephone
+        background $c-gray
+        border 1px solid $c-red
+        color $c-blackvidit
+        padding-left w(20)
+        margin 0 w(20) 0 w(30)
+        height w(40)
+        +below(1300px)
+            width wm(100)
+            height wm(10)
+            margin 0 wm(20) 0 wm(10)
+        +below(768px)
+            width wm(150)
+            margin 0 
+            height wm(15)
+
+
+    &__form-container
+        display flex
+        align-items center
+        margin-top w(30)
+        +below(768px)
+            flex-direction column
+
+    &__popup-fade
+        content ''
+        background $c-grey_light
+        position fixed
+        left 0
+        top 0
+        width 100%
+        height 100%
+        opacity 0.7
+        z-index 7
+
+    &__button-close
+        position absolute
+        top w(-40)
+        right w(-40)
+        font-weight 600
+        padding 0
+        line-height 0
+        letter-spacing 0
+        word-spacing 0
+        outline none
+        margin 0
+        min-height auto
+        background-color transparent
+        color $c-white
+        border none
+        display inline-block
+        font-size w(38)
+        &:hover
+            color $c-red
+
+    &__button-telephone
+        color $c-white
+        background-color $c-red
+        border w(1) solid $c-red
+        font-size w(20)
+        height w(40)
+        width w(200)
+        +below(1300px)
+            width wm(50)
+            height wm(10)
+            font-size wm(5)
+        +below(768px)
+            margin-top wm(10) 
+            width wm(150)
+            height wm(15)
+            font-size wm(10)
+        &:hover
+            color $c-red
+            background-color $c-white

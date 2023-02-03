@@ -1,0 +1,136 @@
+.swiper
+    position relative
+    background-color $c-blue
+    text-align center
+    width 100%
+    height 100%
+
+
+    &__wrap
+        padding w(220) w(375)
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+
+    &__title
+        padding-top w(35)
+        font-family $PoppinsBold
+        font-style normal
+        font-weight 600
+        font-size w(36)
+        line-height w(40)
+        text-align center
+        color $c-gold
+        +below(768px)
+            padding-top wm(35)
+            font-size wm(24)
+            line-height wm(30)
+
+    &__block
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+
+    &__description
+        width w(785)
+        padding-top w(20)
+        font-family $PoppinsRegular
+        font-style normal
+        font-weight 600
+        font-size w(16)
+        line-height w(40)
+        text-align center
+        color $c-white
+        +below(768px)
+            width wm(200)
+            padding-top wm(20)
+            font-size wm(16)
+            line-height wm(30)
+    
+    &__author
+        padding-top w(40)
+        font-family $PoppinsBold
+        font-style normal
+        font-weight 600
+        font-size w(24)
+        line-height w(40)
+        text-align center
+        color $c-gold
+        letter-spacing 0.245em
+        +below(768px)
+            padding-top wm(20)
+            font-size wm(24)
+            line-height wm(40)
+
+    &__swap-left
+        position absolute
+        top w(365)
+        left w(395)
+        width w(30)
+        height w(30)
+        border-top w(2) solid $c-white
+        border-left w(2) solid $c-white
+        transform rotate(-45deg)
+        z-index 2
+        cursor pointer
+        &:hover
+            opacity .7
+            border-top w(2) solid $c-gold
+            border-left w(2) solid $c-gold
+        +below(768px)
+            margin-right wm(10)
+            width wm(20)
+            height wm(20)
+
+
+    &__swap-right
+        position absolute
+        top w(365)
+        right w(395)
+        width w(30)
+        height w(30)
+        border-top w(2) solid $c-white
+        border-right w(2) solid $c-white
+        transform rotate(45deg)
+        z-index 2
+        cursor pointer
+        &:hover
+            opacity .7
+            border-top w(2) solid $c-gold
+            border-right w(2) solid $c-gold
+        +below(768px)
+            margin-left wm(10)
+            width wm(20)
+            height wm(20)
+
+    &__apostrophe
+        width w(83)
+        img
+            width 100%
+        +below(768px)
+            width wm(83)
+
+// .swiper {
+//     width: 100%;
+//     height: 100%;
+// }
+
+.swiper-slide 
+    text-align center
+    font-size 18px
+    display flex
+    flex-direction column
+    padding w(220) w(375)
+    justify-content center
+    align-items center
+
+
+// .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
+

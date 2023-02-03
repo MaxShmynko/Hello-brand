@@ -1,0 +1,34 @@
+.footer
+    background-color $c-white
+    padding-top w(50)
+    +below(768px)
+        padding-top wm(50)
+    
+    &__links
+        padding-top w(40)
+        display flex
+        flex-direction row
+        justify-content space-around
+        background-color $c-blue
+        padding-bottom w(20)
+        +below(768px)
+            padding-top wm(20)
+            padding-bottom wm(20)
+
+    &__img
+        margin 0 auto
+        width w(1170)
+        padding-bottom w(20)
+        img
+            width 100%
+        +below(768px)
+            width wm(300)
+            padding-bottom wm(20)
+
+    &__logo
+        width w(270)
+        img
+            width 100%
+        +below(768px)
+            width wm(100)
+            align-self center

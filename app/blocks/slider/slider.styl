@@ -1,0 +1,154 @@
+.slider
+    overflow hidden
+
+    &:before
+        content ''
+        width 100%
+        height 60%
+        background-color $c-blue
+
+    .slider:before
+        content ''
+        width 100%
+        height 60%
+        background-color $c-blue
+
+    &__list
+        padding 0 100px
+        position relative
+        display flex
+        flex-flow row nowrap
+        transform translateX(-100%)
+
+    
+    &__item
+        margin-right 30px
+        flex-shrink 0
+        width 100%
+
+        &:last-child
+            margin-right 0
+
+        img
+            width 100%
+
+    &__container
+        display flex
+        flex-direction row
+        justify-content space-around
+        align-items center
+        background-color $c-blue
+        background-size 70%
+        padding-bottom w(30)
+        +below(768px)
+            flex-direction column
+            align-items flex-start
+            background-color $c-blue
+            background-size 70%
+            padding-bottom wm(30)
+
+    &__title
+        font-family $PoppinsBold
+        font-style normal
+        font-weight bold
+        font-size w(48)
+        line-height w(88)
+        color $c-white
+        +below(768px)
+            padding-left wm(20)
+            font-size wm(24)
+            line-height wm(24)
+
+    &__text
+        width w(450)
+        font-family $PoppinsRegular
+        font-style normal
+        font-weight normal
+        font-size w(16)
+        line-height w(32)
+        color $c-white
+        +below(768px)
+            padding-top wm(20)
+            padding-left wm(70)
+            text-align justify
+            width wm(280)
+            font-size wm(16)
+            line-height wm(32)
+
+    &__textform
+        padding-top w(70)
+        +below(768px)
+            padding-top wm(50)
+
+    &__swap
+        padding-top w(35)
+        display flex
+        flex-direction row
+        +below(768px)
+            padding-top wm(20)
+            align-self center
+
+    &__swap_left
+        margin-right w(30)
+        width w(35)
+        height w(30)
+        border-top w(2) solid $c-white
+        border-left w(2) solid $c-white
+        transform rotate(-45deg)
+        &:hover
+            opacity .7
+            border-top w(2) solid $c-gold
+            border-left w(2) solid $c-gold
+
+        +below(768px)
+            margin-right wm(30)
+            width wm(30)
+            height wm(30)
+
+    &__swap_rigth
+        width w(35)
+        height w(30)
+        border-top w(2) solid $c-white
+        border-right w(2) solid $c-white
+        transform rotate(45deg)
+        &:hover
+            opacity .7
+            border-top w(2) solid $c-gold
+            border-right w(2) solid $c-gold
+
+        +below(768px)
+            margin-right wm(30)
+            width wm(30)
+            height wm(30)
+
+    &__slider_item
+        padding-top w(50)
+        display flex
+        flex-direction row
+        justify-content space-between
+        +below(768px)
+            padding-top wm(30)
+
+    &__slider_1
+        width w(445)
+        img
+            width 100%
+        +below(768px)
+            align-self center
+
+    &__slider_2
+        padding-left w(30)
+        padding-right w(30)
+        width w(970)
+        align-self center
+        img
+            width 100%
+        +below(768px)
+            width wm(190)
+
+    &__slider_3
+        width w(445)
+        img
+            width 100%
+        +below(768px)
+            align-self center

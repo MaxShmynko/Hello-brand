@@ -1,0 +1,28 @@
+.sharing_copy
+    position relative
+
+    &__list
+        display flex
+        flex-flow row
+
+    &__item
+        margin-left w(50)
+        position relative
+        width w(50)
+        height w(50)
+        border-radius 50%
+        background-color $c-black
+
+        &:first-child
+            margin-left 0
+
+    &__link
+        display inline-block
+
+   &__text
+       font-family $PoppinsRegular
+        font-style bold
+        font-weight 600
+        font-size w(16)
+        line-height w(24)
+        text-align center

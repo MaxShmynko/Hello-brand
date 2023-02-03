@@ -1,0 +1,132 @@
+.carte
+    background-color $c-white
+
+    &__wrap
+        padding w(80) 0 w(90)
+        display flex
+        flex-direction row
+        +below(768px)
+            flex-direction column
+            padding wm(30) wm(30) wm(35) 
+
+    &__list
+        padding-bottom w(80)
+        +below(768px)
+            padding-bottom wm(40)
+
+    &__block
+        width w(480)
+        display flex
+        flex-direction column
+        padding-top w(20)
+        padding-bottom w(20)
+        border-bottom 1px solid #E7E7E7
+        &:first-child
+            padding-top w(0)
+        +below(768px)
+            width 100%
+            padding-top wm(20)
+            padding-bottom wm(0)
+            &:first-child
+                padding-top wm(0)
+    
+    &__street
+        font-family $PoppinsRegular
+        font-style normal
+        font-weight 600
+        font-size w(24)
+        line-height w(32)
+        color $c-black
+        +below(768px)
+            font-size wm(12)
+            line-height wm(10)
+
+
+    &__inline
+        display flex
+        flex-direction row
+        align-items center
+        +below(768px)
+            justify-content space-between
+
+    &__title
+        padding-right w(15)
+        font-family $PoppinsRegular
+        font-style normal
+        font-weight normal
+        font-size w(18)
+        line-height w(32)
+        color $c-black
+        display inline-block
+        +below(768px)
+            font-size wm(10)
+            line-height wm(10)
+    
+    &__ellipce
+        width w(40)
+        margin-top w(15)
+        margin-bottom w(20)
+        img
+            width 100%
+        +below(768px)
+           display none
+
+    
+    &__subtitle
+        padding-left w(15)
+        font-family $PoppinsRegular
+        font-style normal
+        font-weight normal
+        font-size w(18)
+        line-height w(32)
+        color $c-black
+        display inline-block
+        +below(768px)
+            padding-left wm(0)
+            font-size wm(10)
+            line-height wm(10)
+
+    &__photo
+        margin-left auto
+        display flex
+        position relative
+        &::before
+            content ''
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+            border w(3) solid #D3B47F
+            width w(471)
+            height w(502)
+            +below(768px)
+                display none
+        +below(768px)
+            margin 0
+            display flex
+
+    &__picture-one
+        align-self flex-end
+        width w(325)
+        z-index 1
+        img
+            width 100%
+        +below(768px)
+            width wm(150)
+            align-self flex-end
+            img
+                width 100%
+    
+    &__picture-two
+        align-self flex-start
+        width w(325)
+        padding-left w(20)
+        z-index 1
+        img
+            width 100%
+        +below(768px)
+            width wm(185)
+            padding-left wm(35)
+            align-self flex-start
+            img
+                width 100%

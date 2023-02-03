@@ -1,0 +1,25 @@
+extends /blocks/layout-default/layout-default
+include /blocks/promo/promo
+include /blocks/sharing/sharing
+include /blocks/sharing_copy/sharing_copy
+include /blocks/carte/carte
+include /blocks/wijnkaart/wijnkaart
+include /blocks/lunchmenu/lunchmenu
+include /blocks/slider/slider
+include /blocks/contact/contact
+include /blocks/footer/footer
+//- include /blocks/map/map
+include /blocks/lead-catcher/lead-catcher
+
+block head
+	- var pageTitle = 'Project Template';
+
+block content
+	+promo()
+	+carte()
+	+wijnkaart()
+	+lunchmenu()
+	+slider()
+	+contact()
+	//- +map()
+	+lead-catcher()

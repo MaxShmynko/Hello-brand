@@ -1,0 +1,97 @@
+.lunchmenu
+    background-color $c-white
+
+    &__wrap
+        padding w(109) w(375)
+        display flex
+        flex-direction column
+        +below(768px)
+            padding wm(40) wm(20)
+
+    &__block
+        display flex
+        flex-direction row
+        justify-content space-between
+        margin-bottom 30px
+        &:last-child
+            margin-bottom 0
+        &:nth-child(2n)
+            flex-direction row-reverse
+
+        +below(768px)
+            flex-direction column
+
+    &__block_2
+        padding-top w(30)
+        display flex
+        flex-direction row
+        +below(768px)
+            flex-direction column
+            padding-top wm(30)
+
+
+    &__block_3
+        padding-top w(30)
+        display flex
+        flex-direction row
+        +below(768px)
+            flex-direction column
+            padding-top wm(30)
+
+    &__header
+        display flex
+        flex-direction column
+        justify-content center
+
+    &__title
+        font-family $PoppinsBold
+        font-style normal
+        font-weight bold
+        font-size w(40)
+        line-height w(88)
+        color $c-black
+        +below(768px)
+            font-size wm(24)
+            line-height wm(24)
+            padding-left wm(20)
+            &:nth-child(2)
+                padding-right wm(20)
+
+
+    &__text
+        width w(470)
+        font-family $PoppinsRegular
+        font-style normal
+        font-weight normal
+        font-size w(16)
+        line-height w(32)
+        color $c-grey
+        +below(768px)
+            width wm(280)
+            font-size wm(16)
+            line-height wm(32)
+            padding-left wm(20)
+            padding-top wm(15)
+            text-align justify
+            &:nth-child(2)
+                padding-right wm(20)
+
+
+    &__picture
+        width w(670)
+        img
+            width 100%
+
+        +below(768px)
+            width wm(209)
+            padding-top wm(30)
+    
+    &__line
+        padding-right w(55)
+        border w(1) solid $c-gold
+        width w(110)
+        height w(0)
+        +below(768px)
+            padding-right wm(0)
+            width wm(59)
+            margin-top wm(15)

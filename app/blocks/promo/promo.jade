@@ -1,0 +1,42 @@
+mixin promo()
+
+    +b('section').promo
+        +e.wrap
+            +e.menu
+                +e.logo
+                    img(src='/images/logo_white.png')
+                +e('nav').nav
+                    +e(href='#').item À la carte
+                    +e(href='#').item Wijnkaart
+                    +e(href='#').item Lunchmenu
+                    +e(href='#').item Contact
+                +e.phone 
+                    +e.phonelogo
+                        img(src='/images/phone.svg')
+                    +e(href='#').phonelink +32 9 282 57 25
+                    
+                +e.check
+                    img(src='/images/check.svg')
+
+            +e.menu-burger
+                +e('nav').nav-burger
+                    +e('li').li
+                        +e(href='#').item-burger À la carte
+                    +e('li').li
+                        +e(href='#').item-burger Wijnkaart
+                    +e('li').li
+                        +e(href='#').item-burger Lunchmenu
+                    +e('li').li
+                        +e(href='#').item-burger Contact
+                    +e('li').li
+                        +e.phone-burger 
+                            +e.phonelogo-burger 
+                                img(src='/images/phone.svg')
+                            +e(href='#').phonelink-burger  +32 9 282 57 25
+
+            +e.open OPEN EVERYDAY 6AM - 9PM
+            +e.header A bad day with lunch is better than a good day without it.
+            +e.connection
+                +e('button').button Reserve a table
+                +e.sharing
+                    +sharing()

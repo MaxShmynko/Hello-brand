@@ -1,0 +1,202 @@
+.promo
+    width auto
+    background url('/images/promo_bg.jpg') no-repeat center
+    background-size cover
+    position relative
+    overflow hidden
+    +below(768px)
+        background url('/images/promo_bgmobile.jpg')0 0/100% no-repeat
+
+    &__wrap
+        display flex
+        flex-direction column
+        justify-content center
+        padding-top w(70)
+        padding-left w(365)
+        padding-right w(365)
+        +below(768px)
+            padding wm(30) wm(20)
+
+    &__menu
+        display flex
+        flex-direction row
+        justify-content space-between
+        text-align center
+
+    &__logo
+        width w(270)
+        img
+            width 100%
+        +below(768px)
+            width wm(105)
+    
+    &__nav
+        display flex
+        flex-flow row nowrap
+
+    
+    &__item
+        padding-left w(45)
+        padding-top w(20)
+        color $c-white
+        font-family $PoppinsRegular
+        font-style normal
+        font-weight normal
+        font-size w(16)
+        line-height w(24)
+        text-decoration none
+        &:first-child
+            padding-left 0
+        &:hover
+            color $c-grey_light
+        +below(768px)
+            display none
+    
+    &__phone
+        display flex
+
+    &__phonelogo
+        padding-top w(20)
+        color $c-gold
+        img
+            width 100%
+
+        &:hover
+            opacity .5
+
+        +below(768px)
+            width wm(20)
+                img
+                    width 100%
+
+    &__phonelink
+        padding-left w(10)
+        padding-top w(20)
+        color $c-white
+        font-family $PoppinsRegular
+        font-size w(16)
+        line-height w(24)
+        text-decoration none
+
+    &__phone 
+        +below(768px)
+            display none
+
+    &__check
+        display none
+        +below(768px)
+            margin-left auto
+            display inline-block
+            width wm(20)
+            img
+                width 100%
+            &:hover
+                opacity .7
+
+    &__open
+        padding-top  w(170)
+        color $c-white
+        font-family $PoppinsRegular
+        font-style normal
+        font-weight 500
+        font-size w(24)
+        line-height w(32)
+        letter-spacing 0.06em
+        +below(768px)
+            padding-top wm(90)
+            font-size wm(18)
+            line-height wm(28)
+            width wm(140)
+
+    &__header
+        padding-top w(25)
+        color $c-white
+        font-family $PoppinsBold
+        font-style normal
+        font-size w(64)
+        line-height w(88)
+        +below(768px)
+            margin-right auto
+            text-align right 
+            padding-top wm(40)
+            font-size wm(24)
+            line-height wm(32)
+
+    &__connection
+        display flex
+        flex-direction row
+        padding-bottom w(20)
+        +below(768px)
+            flex-direction column
+
+    &__button
+        background-color $c-blue
+        width w(270)
+        margin-top w(40)
+        padding w(35) w(60) w(35) w(60)
+        cursor pointer
+        border none
+        color $c-white
+        font-family $PoppinsMedium
+        font-weight 500
+        font-size w(18)
+        line-height w(24)
+        &:hover
+            background-color $c-blue2vidit
+
+        +below(768px)
+            width wm(155)
+            height wm(40)
+            margin-top wm(40)
+            padding wm(10) wm(25) wm(10) wm(25)
+            font-size wm(10)
+
+    &__sharing
+        margin-left auto
+        padding-top w(65)
+        +below(768px)
+            margin-right auto
+            padding-top wm(50)
+
+    &__menu-burger
+        position absolute
+        top w(300)
+        left w(0)
+        transform translate(-100%, 0)
+        background-color $c-white
+        width 100%
+        padding w(40) w(40)
+        text-align center
+        transition left 0.3s
+        z-index 2
+
+    .active_menu-burger
+        transform translate(0, 0)
+
+    &__li
+        padding-top w(105)
+        &:first-child
+            padding-top 0
+
+    &__item-burger
+        color $c-black
+        font-size w(60)
+        text-decoration none
+        font-family $PoppinsRegular
+
+    &__phone-burger
+        display flex
+        justify-content center
+        align-items center
+
+    &__phonelogo-burger
+        width w(100)
+        img
+            width 100%
+
+    &__phonelink-burger
+        color $c-black
+        text-decoration none
+        font-family $PoppinsRegular
+        font-size w(40)
+        padding-left w(30)

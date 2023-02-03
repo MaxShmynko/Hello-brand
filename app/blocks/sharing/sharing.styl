@@ -1,0 +1,55 @@
+.sharing
+    position relative
+
+    &__list
+        display flex
+        flex-flow row
+
+    &__item
+        margin-left w(25)
+        position relative
+        border-radius 50%
+        transition opacity .3s
+        img
+            width w(48)
+        +below(768px)
+            margin-left wm(15)
+            width wm(35)
+            height wm(35)
+            img
+                width wm(35)
+
+        &:hover
+            opacity .7
+    
+        &:first-child
+            margin-left 0
+
+    &__link
+        display inline-block
+
+    &__icon
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%,-50%)
+
+        &_fb
+            width w(48)
+            +below(768px)
+                width wm(40)
+
+        &_ig
+            width w(48)
+            +below(768px)
+                width wm(40)
+        
+        &_tw
+            width w(48)
+            +below(768px)
+                width wm(40)
+
+        &_yt
+            width w(48)
+            +below(768px)
+                width wm(40)

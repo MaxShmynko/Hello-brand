@@ -1,0 +1,193 @@
+.contact
+    background-color $c-white
+    padding-top w(100)
+    +below(768px)
+        padding-top wm(40)
+        padding-left wm(20)
+
+    &__wrap
+        display flex
+        flex-direction row
+        justify-content center
+        +below(768px)
+            flex-direction column
+
+    &__header
+        display flex
+        flex-direction column
+    
+    &__block
+        padding-top w(35)
+        display flex
+        flex-direction row
+        +below(768px)
+            padding-top wm(30)
+    
+    &__contact
+        font-family $PoppinsBold
+        font-style normal
+        font-weight bold
+        font-size w(48)
+        line-height w(88)
+        color $c-black
+        +below(768px)
+            font-size wm(24)
+            line-height wm(24)
+
+    &__title_block
+        font-family $PoppinsRegular
+        font-style normal
+        font-weight normal
+        font-size w(16)
+        line-height w(32)
+        color $c-black_light
+        +below(768px)
+            font-size wm(16)
+            line-height wm(16)
+
+    &__info
+        font-family $PoppinsBold
+        font-style normal
+        font-weight bold
+        font-size w(24)
+        line-height w(32)
+        color $c-black_light
+        +below(768px)
+            padding-top wm(5) 
+            font-size wm(16)
+            line-height wm(16)
+
+    &__text
+        padding-left w(15)
+        +below(768px)
+            display flex
+            flex-direction column
+            padding-left wm(15)
+            align-self center
+
+    &__icon
+        width w(65)
+        img
+            width 100%
+        +below(768px)
+            width wm(40)
+
+    &__questions
+        padding-left w(100)
+        display flex
+        flex-direction column
+        +below(768px)
+            padding-top wm(30)
+            padding-left wm(0)
+
+    &__form
+        padding-top w(30)
+        display flex
+        flex-direction row
+        +below(768px)
+            padding-top wm(20)
+            flex-direction column
+
+    &__header_questions
+        font-family $PoppinsBold
+        font-style normal
+        font-weight bold
+        font-size w(48)
+        line-height w(88)
+        color $c-black
+        +below(768px)
+            font-size wm(24)
+            line-height wm(24)
+
+    &__name
+        font-family $PoppinsRegular
+        font-style normal
+        font-weight normal
+        font-size w(16)
+        line-height w(32)
+        color $c-black
+        +below(768px)
+            font-size wm(16)
+            line-height wm(32)
+
+    &__input
+        padding-left w(15)
+        font-family $PoppinsRegular
+        font-size w(16)
+        line-height w(32)
+        color $c-black
+        width w(320)
+        height w(80)
+        border w(1) solid $c-grey_light
+        box-sizing border-box
+        +below(768px)
+            padding-top wm(25)
+            padding-left wm(15)
+            font-size wm(16)
+            line-height wm(24)
+            width wm(270)
+            height wm(80)
+    
+    &__right
+        padding-left w(20)
+
+    &__mail
+        font-family $PoppinsRegular
+        font-size w(16)
+        line-height w(32)
+        color $c-black
+        +below(768px)
+            font-size wm(16)
+            line-height wm(32)
+
+    &__request
+        padding-top w(20)
+        font-family $PoppinsRegular
+        font-size w(16)
+        line-height w(32)
+        color $c-black
+        +below(768px)
+            font-size wm(16)
+            line-height wm(32)
+
+    &__input_request
+        padding-left w(15)
+        font-family $PoppinsRegular
+        font-size w(16)
+        line-height w(32)
+        color $c-black
+        width w(670)
+        height w(125)
+        border w(1) solid $c-grey_light
+        box-sizing border-box
+        &::placeholder
+            position absolute
+            top w(30)
+        +below(768px)
+            padding-top wm(25)
+            padding-left wm(15)
+            font-size wm(16)
+            line-height wm(24)
+            width wm(270)
+            height wm(80)
+
+    &__button
+        margin-top w(20)
+        padding w(40) w(105)
+        font-family $PoppinsBold
+        border none
+        cursor pointer
+        font-size w(24)
+        color $c-white
+        width w(270)
+        background $c-blue
+        &:hover
+            background-color $c-blue2vidit
+        +below(768px)
+            margin-top wm(20)
+            padding wm(20) wm(55)
+            font-size wm(16)
+            line-height wm(16)
+            width wm(150)
+            height wm(60)
+            align-self center
